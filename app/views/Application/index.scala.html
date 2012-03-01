@@ -4,9 +4,13 @@
     
     <h2>hello world!</h2>
     
-    @form(controllers.Application.show ) {
+    @form(controllers.Application.showByHtml ) {
     	<input type="text" id="target_url" name="target_url" value="http://www.playframework.org/documentation/1.2.4/overview">
-		<input type="submit" value="show" id="show">
+		<input type="submit" value="html" id="html">
     }
     
+    @form(controllers.Application.showByText ) {
+    	<input type="text" id="target_url" name="target_url" value="http://www.playframework.org/documentation/1.2.4/overview">
+		<input type="submit" value="text" id="text">
+    }
 }
