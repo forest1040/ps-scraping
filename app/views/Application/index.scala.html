@@ -2,6 +2,11 @@
 
 @main(title) {
     
-    @views.defaults.html.welcome(title)
+    <h2>hello world!</h2>
+    
+    @form(controllers.Application.show ) {
+    	<input type="text" id="target_url" name="target_url" value="http://www.playframework.org/documentation/1.2.4/overview">
+		<input type="submit" value="show" id="show">
+    }
     
 }
